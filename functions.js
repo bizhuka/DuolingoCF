@@ -1,2 +1,0 @@
-!function(){"use strict";CustomFunctions.associate("AUDIO_PLAY",(function(e,t,n="male"){return new Audio(`https://texttospeech.responsivevoice.org/v1/text:synthesize?text=${encodeURIComponent(e)}&lang=${t}&engine=g1&name=&pitch=0.5&rate=0.5&volume=1&key=kvfbSITh&gender=${n}`).play(),e})),CustomFunctions.associate("LOG",(function(e){return console.log(e),e}))}();
-//# sourceMappingURL=functions.js.map
