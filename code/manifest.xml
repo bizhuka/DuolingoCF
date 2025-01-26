@@ -2,15 +2,18 @@
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
   <Id>6faabbf6-75c1-4f3e-afaf-ec7cac2986ef</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>Contoso</ProviderName>
+  <ProviderName>Northern Crew</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="DuolingoCF"/>
-  <Description DefaultValue="Write your own Excel functions in TypeScript."/>
-  <IconUrl DefaultValue="https://localhost:5121/assets/icon-80.png"/>
+  <Description DefaultValue="Export data to Anki CSV"/>
+  <IconUrl DefaultValue="https://localhost:5121/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://localhost:5121/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://github.com/bizhuka/DuolingoCF/issues"/>
   <AppDomains>
-    <AppDomain>https://bizhuka.github.io/DuolingoCF</AppDomain>
+    <!-- <AppDomain>https://bizhuka.github.io/DuolingoCF</AppDomain> -->
+    <AppDomain>AppDomain1</AppDomain>
+    <AppDomain>AppDomain2</AppDomain>
+    <AppDomain>AppDomain3</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
@@ -27,7 +30,7 @@
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
     <Hosts>
       <Host xsi:type="Workbook">
-        <Runtimes>
+        <!-- <Runtimes>
           <Runtime resid="Taskpane.Url" lifetime="long"/>
         </Runtimes>
         <AllFormFactors>
@@ -43,14 +46,14 @@
             </Metadata>
             <Namespace resid="Functions.Namespace"/>
           </ExtensionPoint>
-        </AllFormFactors>
+        </AllFormFactors> -->
         <DesktopFormFactor>
           <GetStarted>
             <Title resid="GetStarted.Title"/>
             <Description resid="GetStarted.Description"/>
             <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
           </GetStarted>
-          <FunctionFile resid="Taskpane.Url"/>
+          <!-- <FunctionFile resid="Taskpane.Url"/> -->
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <OfficeTab id="TabHome">
               <Group id="CommandsGroup">
@@ -86,17 +89,17 @@
       <bt:Images>
         <bt:Image id="Icon.16x16" DefaultValue="https://localhost:5121/assets/icon-16.png"/>
         <bt:Image id="Icon.32x32" DefaultValue="https://localhost:5121/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://localhost:5121/assets/icon-80.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://localhost:5121/assets/icon-64.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Functions.Script.Url" DefaultValue="https://localhost:5121/functions.js"/>
-        <bt:Url id="Functions.Metadata.Url" DefaultValue="https://localhost:5121/functions.json"/>
+        <!-- <bt:Url id="Functions.Script.Url" DefaultValue="https://localhost:5121/functions.js"/>
+        <bt:Url id="Functions.Metadata.Url" DefaultValue="https://localhost:5121/functions.json"/> -->
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
         <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:5121/index.html"/>
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="Functions.Namespace" DefaultValue="DUOCF"/>
-        <bt:String id="GetStarted.Title" DefaultValue="Get started with your sample add-in!"/>
+        <!-- <bt:String id="Functions.Namespace" DefaultValue="DUOCF"/> -->
+        <bt:String id="GetStarted.Title" DefaultValue="Export Duolingo to Anki!"/>
         <bt:String id="CommandsGroup.Label" DefaultValue="Northern Crew"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="Export Duolingo to Anki"/>
       </bt:ShortStrings>

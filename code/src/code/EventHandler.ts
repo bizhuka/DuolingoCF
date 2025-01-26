@@ -221,7 +221,8 @@ export class EventHandler {
       const csvRows = filteredItems.map((item) => {
         const values = Object.values(item);
         values.pop();
-        return values;
+        // Add line breaks
+        return values.map(value => value.replace(/\n/g, "<br/>"));;
       });
 
       Utils.downloadBlob(csvRows, "to_anki.csv");
